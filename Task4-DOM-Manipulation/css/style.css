@@ -1,0 +1,297 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    overflow-x:hidden;
+    transition:.4s;
+}
+
+/* Dark & Light Mode */
+
+body.light{
+    background:#f5f7fb;
+}
+
+.theme-btn{
+
+    position:fixed;
+
+    top:20px;
+
+    right:20px;
+
+    height:55px;
+
+    width:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    z-index:1000;
+
+    transition:.3s;
+
+}
+
+.theme-btn:hover{
+
+    transform:rotate(20deg);
+
+}
+
+/* Pages */
+
+.page{
+
+    display:none;
+
+}
+
+.active-page{
+
+    display:block;
+
+}
+
+/* Card */
+
+.register-card{
+
+    width:470px;
+
+    background:rgba(255,255,255,.95);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+    animation:fadeUp .8s;
+
+}
+
+.logo{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+
+    color:white;
+
+    font-size:35px;
+
+}
+
+/* Inputs */
+
+.form-control,
+.form-select{
+
+    height:50px;
+
+    border-radius:10px;
+
+}
+
+textarea.form-control{
+
+    height:auto;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 10px rgba(37,99,235,.2);
+
+}
+
+/* Button */
+
+.register-btn{
+
+    height:50px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+
+    transition:.3s;
+
+}
+
+.register-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(37,99,235,.4);
+
+}
+
+/* Password Strength */
+
+.strength{
+
+    width:100%;
+
+    height:8px;
+
+    background:#ddd;
+
+    border-radius:10px;
+
+    margin-top:10px;
+
+    overflow:hidden;
+
+}
+
+#strengthBar{
+
+    width:0%;
+
+    height:100%;
+
+    background:red;
+
+    transition:.4s;
+
+}
+
+/* Success Page */
+
+.success-card{
+
+    width:450px;
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+    animation:fadeUp .7s;
+
+}
+
+.success-icon{
+
+    font-size:70px;
+
+    color:#16a34a;
+
+    margin-bottom:20px;
+
+}
+
+/* Messages */
+
+small{
+
+    display:block;
+
+    margin-top:6px;
+
+}
+
+#emailMessage{
+
+    color:#dc2626;
+
+}
+
+#confirmMessage{
+
+    color:#dc2626;
+
+}
+
+#strengthText{
+
+    font-weight:600;
+
+}
+
+#namePreview{
+
+    color:#2563eb;
+
+}
+
+/* Animation */
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:576px){
+
+.register-card,
+.success-card{
+
+width:95%;
+
+padding:25px;
+
+}
+
+.theme-btn{
+
+height:45px;
+
+width:45px;
+
+}
+
+}
