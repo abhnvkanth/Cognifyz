@@ -1,0 +1,224 @@
+/* Google Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #0f172a;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+.custom-nav {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    transition: 0.4s;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #38bdf8 !important;
+}
+
+/* Hero */
+
+.hero {
+    height: 100vh;
+    background:
+        linear-gradient(rgba(15,23,42,.75), rgba(15,23,42,.75)),
+        url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600")
+        center/cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    animation: fadeDown 1s;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #d1d5db;
+    animation: fadeUp 1s;
+}
+
+.hero .btn {
+    padding: 15px 40px;
+    border-radius: 50px;
+    transition: .4s;
+}
+
+.hero .btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(56,189,248,.5);
+}
+
+/* Sections */
+
+section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    color: #cbd5e1;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+/* Cards */
+
+.course-card {
+    background: #1e293b;
+    padding: 35px;
+    border-radius: 18px;
+    text-align: center;
+    transition: .4s;
+    height: 100%;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    background: #334155;
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+}
+
+.course-card i {
+    font-size: 3rem;
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.course-card h4,
+.course-card h5 {
+    margin-bottom: 15px;
+}
+
+.course-card p {
+    color: #d1d5db;
+}
+
+/* Contact Form */
+
+.form-control {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(56,189,248,.3);
+}
+
+/* Footer */
+
+footer {
+    background: #020617;
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: #94a3b8;
+}
+
+footer i {
+    cursor: pointer;
+    transition: .3s;
+}
+
+footer i:hover {
+    color: #38bdf8;
+}
+
+/* Animations */
+
+@keyframes fadeDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.hero h1{
+font-size:3rem;
+}
+
+.section-title{
+font-size:2.2rem;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.4rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+.nav-link{
+margin-left:0;
+padding:10px 0;
+}
+
+section{
+padding:70px 0;
+}
+
+}
